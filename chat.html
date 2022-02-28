@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat w/ KimsunEung - Kokoa Clone</title>
   </head>
-  <body id="char-screen">
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__colunm">
         <span>No Service</span>
@@ -25,7 +25,9 @@
 
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more.html"><i class="fas fa-angle-left fa-3x"></i></a>
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
       </div>
       <div class="alt-header__column">
         <h1 class="alt-header__title">김선응</h1>
@@ -36,7 +38,45 @@
       </div>
     </header>
 
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Thusday, June 30, 2020</div>
+
+      <div class="message-row">
+        <img
+          src="https://w.namu.la/s/3b3dbb9f04c787764503f5e1331327717ffacd26b57cce77fe50dc090dbdf12a723451cf9b8aea0f383615ed2c1c61e99aef13b2bd91c118e5215cd9ba9a70c82cb853c17a019578e403aa239e1ac5b2"
+          alt=""
+        />
+        <div class="message-row__content">
+          <span class="message__author">김선응</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row-content">
+          <div class="message__info">
+            <span class="message__bubble">Hi nice to meet you!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/0972e8cf04.js"
